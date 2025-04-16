@@ -10,6 +10,8 @@ words = open("russian_nouns.txt", "r").read().split("\n")
 viselec = 0
 slovo = random.choice(words)
 shifr =  [] #зашифровоное слово
+for i in range(0, len(slovo)):
+   shifr.append(i)
 while shifr != slovo:
     bukva = input() #ввод
     
@@ -22,8 +24,7 @@ while shifr != slovo:
 #проверка на дурака
 
     if bukva in slovo:
-      for i in range(0, len(slovo)):
-       shifr.append(i)
+      
 
     else:
       if viselec = 0:
@@ -78,3 +79,24 @@ while shifr != slovo:
        #конец игры висельницы
        break
        print('КОНЕЦ ИГРЫ! ты проиграл')
+
+
+
+
+
+
+#пример
+
+slovo = 'привет'
+shifr = []
+bukva = 'в'
+t = 1234567890
+for i in range(0, len(slovo)):
+    shifr.append(i)
+print(*shifr)
+for i in shifr:
+    if int(i) in int(t):
+        if slovo[i] == bukva:
+            shifr[i] = slovo[i]
+
+print(shifr)
