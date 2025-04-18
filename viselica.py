@@ -12,9 +12,10 @@ slovo = random.choice(words)
 shifr =  [] #зашифровоное слово
 for i in range(0, len(slovo)):
    shifr.append(i)
+print(*shifr)
 while shifr != slovo:
     bukva = input() #ввод
-    
+   
     if bukva in shifr:
       countine
       print('такая буква уже найдена! напиши другую.')
@@ -24,73 +25,62 @@ while shifr != slovo:
 #проверка на дурака
 
     if bukva in slovo:
-      
+      for i in range(0, len(slovo)):
+         shifr.append(i)
+    for i in shifr:
+      if slovo[i] == bukva:
+         shifr[i] = bukva
 
     else:
-      if viselec = 0:
-       print('    ___________')
-       print('    |         |')
-       print('              |')
-       print('              |')
-       print('              |')
-       print('             _|_')
-    elif viselec = 1:
-       print('    ___________')
-       print('    |         |')
-       print('   😃         |')
-       print('              |')
-       print('              |')
-       print('             _|_')
-      elif viselec = 2:
-       print('    ___________')
-       print('    |         |')
-       print('   😃         |')
-       print('    |         |')
-       print('              |')
-       print('             _|_')
-      elif viselec = 3:
-       print('    ___________')
-       print('    |         |')
-       print('   😃         |')
-       print('    |\        |')
-       print('              |')
-       print('             _|_')
-      elif viselec = 4:
-       print('    ___________')
-       print('    |         |')
-       print('   😃         |')
-       print('   /|\        |')
-       print('              |')
-       print('             _|_')
-      elif viselec = 5:
-       print('    ___________')
-       print('    |         |')
-       print('   😃         |')
-       print('   /|\        |')
-       print('     \        |')
-       print('             _|_')
-      elif viselec = 6:
-       print('    ___________')
-       print('    |         |')
-       print('   😃         |')
-       print('   /|\        |')
-       print('   / \        |')
-       print('             _|_')
-       #конец игры висельницы
-       break
-       print('КОНЕЦ ИГРЫ! ты проиграл')
-
-
-
-
-slovo = 'привет'
-shifr = []
-bukva = 'в'
-t = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-for i in range(0, len(slovo)):
-    shifr.append(i)
-print(*shifr)
-for i in shifr:
-    if slovo[i] == bukva:
-        shifr[i] = bukva
-print(shifr)
+      if viselec == 0:
+        print('    ___________')
+        print('    |         |')
+        print('              |')
+        print('              |')
+        print('              |')
+        print('             _|_')
+      elif viselec == 1:
+        print('    ___________')
+        print('    |         |')
+        print('   😃         |')
+        print('              |')
+        print('              |')
+        print('             _|_')
+      elif viselec == 2:
+        print('    ___________')
+        print('    |         |')
+        print('   😃         |')
+        print('    |         |')
+        print('              |')
+        print('             _|_')
+      elif viselec == 3:
+        print('    ___________')
+        print('    |         |')
+        print('   😃         |')
+        print('    |\        |')
+        print('              |')
+        print('             _|_')
+      elif viselec == 4:
+        print('    ___________')
+        print('    |         |')
+        print('   😃         |')
+        print('   /|\        |')
+        print('              |')
+        print('             _|_')
+      elif viselec == 5:
+        print('    ___________')
+        print('    |         |')
+        print('   😃         |')
+        print('   /|\        |')
+        print('     \        |')
+        print('             _|_')
+      elif viselec == 6:
+        print('    ___________')
+        print('    |         |')
+        print('   😃         |')
+        print('   /|\        |')
+        print('   / \        |')
+        print('             _|_')
+        #конец игры висельницы
+        break
+        print('КОНЕЦ ИГРЫ! ты проиграл')
