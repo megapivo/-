@@ -62,7 +62,7 @@ while shifr != slovo:
        print('   /|\        |')
        print('              |')
        print('             _|_')
-      eif viselec = 5:
+      elif viselec = 5:
        print('    ___________')
        print('    |         |')
        print('   😃         |')
@@ -86,11 +86,11 @@ while shifr != slovo:
 slovo = 'привет'
 shifr = []
 bukva = 'в'
-t = 1023456789
+t = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 for i in range(0, len(slovo)):
     shifr.append(i)
 print(*shifr)
 for i in shifr:
-    if i in int(t):
-        shifr[int(i)] = bukva
-        print(shifr)
+    if slovo[i] == bukva:
+        shifr[i] = bukva
+print(shifr)
