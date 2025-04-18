@@ -29,58 +29,59 @@ while shifr != slovo:
          shifr.append(i)
     for i in shifr:
       if slovo[i] == bukva:
-         shifr[i] = bukva
+         shifr[i] = bukva #питон ругается на это почему то при вводе второй буквы
 
     else:
-      if viselec == 0:
-        print('    ___________')
-        print('    |         |')
-        print('              |')
-        print('              |')
-        print('              |')
-        print('             _|_')
-      elif viselec == 1:
-        print('    ___________')
-        print('    |         |')
-        print('   😃         |')
-        print('              |')
-        print('              |')
-        print('             _|_')
-      elif viselec == 2:
-        print('    ___________')
-        print('    |         |')
-        print('   😃         |')
-        print('    |         |')
-        print('              |')
-        print('             _|_')
-      elif viselec == 3:
-        print('    ___________')
-        print('    |         |')
-        print('   😃         |')
-        print('    |\        |')
-        print('              |')
-        print('             _|_')
-      elif viselec == 4:
-        print('    ___________')
-        print('    |         |')
-        print('   😃         |')
-        print('   /|\        |')
-        print('              |')
-        print('             _|_')
-      elif viselec == 5:
-        print('    ___________')
-        print('    |         |')
-        print('   😃         |')
-        print('   /|\        |')
-        print('     \        |')
-        print('             _|_')
-      elif viselec == 6:
-        print('    ___________')
-        print('    |         |')
-        print('   😃         |')
-        print('   /|\        |')
-        print('   / \        |')
-        print('             _|_')
-        #конец игры висельницы
-        break
-        print('КОНЕЦ ИГРЫ! ты проиграл')
+       if viselec == 0:
+          print('    ___________')
+          print('    |         |')
+          print('              |')
+          print('              |')
+          print('              |')
+          print('             _|_')
+       elif viselec == 1:
+          print('    ___________')
+          print('    |         |')
+          print('   😃         |')
+          print('              |')
+          print('              |')
+          print('             _|_')
+       elif viselec == 2:
+          print('    ___________')
+          print('    |         |')
+          print('   😃         |')
+          print('    |         |')
+          print('              |')
+          print('             _|_')
+       elif viselec == 3:
+          print('    ___________')
+          print('    |         |')
+          print('   😃         |')
+          print('    |\        |')
+          print('              |')
+          print('             _|_')
+       elif viselec == 4:
+          print('    ___________')
+          print('    |         |')
+          print('   😃         |')
+          print('   /|\        |')
+          print('              |')
+          print('             _|_')
+       elif viselec == 5:
+          print('    ___________')
+          print('    |         |')
+          print('   😃         |')
+          print('   /|\        |')
+          print('     \        |')
+          print('             _|_')
+       elif viselec == 6:
+          print('    ___________')
+          print('    |         |')
+          print('   😃         |')
+          print('   /|\        |')
+          print('   / \        |')
+          print('             _|_')
+          #конец игры висельницы
+          break
+          print('КОНЕЦ ИГРЫ! ты проиграл')
+       viselec += 1
